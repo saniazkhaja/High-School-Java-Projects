@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="793.0" style="-fx-background-color: #736AFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorryproject.FXMLDocumentController">
+    <children>
+        <Button fx:id="startButton" layoutX="23.0" layoutY="681.0" onAction="#start" text="Start Game" />
+        <Label fx:id="label" layoutX="354.0" minHeight="16" minWidth="69" text="Sorry!">
+         <font>
+            <Font name="Blackadder ITC" size="42.0" />
+         </font></Label>
+      <GridPane fx:id="gPane" layoutX="44.0" layoutY="108.0" prefHeight="500.0" prefWidth="506.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="32.0" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="31.0" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="choice1Button" layoutX="126.0" layoutY="681.0" mnemonicParsing="false" onAction="#choice1" text="Choice 1" />
+      <Button fx:id="choice2Button" layoutX="211.0" layoutY="681.0" mnemonicParsing="false" onAction="#choice2" text="Choice 2" />
+      <TextField fx:id="pawnSabatoge" layoutX="443.0" layoutY="681.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="297.0" layoutY="685.0" text="Which pawn to sabotage?">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="regCardButton" layoutX="632.0" layoutY="127.0" mnemonicParsing="false" onAction="#regularCard" text="Regular Card" />
+      <Button fx:id="chanceCardButton" layoutX="633.0" layoutY="162.0" mnemonicParsing="false" onAction="#chanceCard" text="Chance Card" />
+      <GridPane fx:id="cPane" layoutX="604.0" layoutY="211.0" prefHeight="184.0" prefWidth="146.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="imgCard" fitHeight="183.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </GridPane>
+      <Button fx:id="diceButton" layoutX="657.0" layoutY="420.0" mnemonicParsing="false" onAction="#dice" text="Dice" />
+      <Label layoutX="627.0" layoutY="460.0" text="Dice number:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="diceLabel" layoutX="666.0" layoutY="481.0" prefHeight="34.0" prefWidth="45.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="550.0" layoutY="681.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Label layoutX="21.0" layoutY="42.0" prefHeight="25.0" prefWidth="699.0" text="Computer:">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="movePawn1Button" layoutX="23.0" layoutY="641.0" mnemonicParsing="false" onAction="#movePawn1" text="Move Pawn 1" />
+      <Button fx:id="movePawn2Button" layoutX="144.0" layoutY="641.0" mnemonicParsing="false" onAction="#movePawn2" text="Move Pawn 2" />
+      <Button fx:id="movePawn3Button" layoutX="253.0" layoutY="641.0" mnemonicParsing="false" onAction="#movePawn3" text="Move Pawn 3" />
+      <Button fx:id="movePawn4Button" layoutX="364.0" layoutY="641.0" mnemonicParsing="false" onAction="#movePawn4" text="Move Pawn 4" />
+      <Label layoutX="471.0" layoutY="645.0" text="Moves Left:">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="movesLabel" layoutX="568.0" layoutY="645.0" prefHeight="17.0" prefWidth="62.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <Label fx:id="sabatogeLabel" layoutX="297.0" layoutY="706.0" prefHeight="17.0" prefWidth="485.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Label>
+      <Button fx:id="resetingButton" layoutX="714.0" layoutY="673.0" mnemonicParsing="false" onAction="#resetButton" text="Reset" />
+      <Label layoutX="632.0" layoutY="99.0" text="Turn: ">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <Label layoutX="574.0" layoutY="541.0" text="Computer Pawns Home:">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font></Label>
+      <Label layoutX="606.0" layoutY="566.0" text="Player Pawns Home: ">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="compHomeLabel" layoutX="739.0" layoutY="543.0" prefHeight="17.0" prefWidth="40.0">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font></Label>
+      <Label fx:id="playerHomeLabel" layoutX="737.0" layoutY="567.0" prefHeight="17.0" prefWidth="45.0">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font></Label>
+      <Label fx:id="turnLabel" layoutX="675.0" layoutY="97.0" prefHeight="17.0" prefWidth="110.0">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></Label>
+      <Label fx:id="compLabel" layoutX="19.0" layoutY="63.0" prefHeight="17.0" prefWidth="756.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <Label fx:id="compSpecialLabel" layoutX="15.0" layoutY="80.0" prefHeight="17.0" prefWidth="767.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
