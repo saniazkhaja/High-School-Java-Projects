@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cashregister.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="42.0" layoutY="153.0" onAction="#burger" text="Burger" textFill="#f58300">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></Button>
+        <Label fx:id="subLabel" layoutX="384.0" layoutY="100.0" minHeight="16" minWidth="69">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font></Label>
+      <Button layoutX="42.0" layoutY="192.0" mnemonicParsing="false" onAction="#fries" prefHeight="29.0" prefWidth="66.0" text="Fries" textFill="#1ab043">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="42.0" layoutY="229.0" mnemonicParsing="false" onAction="#drink" prefHeight="29.0" prefWidth="66.0" text="Drink" textFill="#1b6fdd">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="294.0" layoutY="215.0" mnemonicParsing="false" onAction="#pay" prefHeight="29.0" prefWidth="81.0" text="Pay">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="152.0" layoutY="26.0" prefHeight="56.0" prefWidth="233.0" text="The Food Eatery">
+         <font>
+            <Font name="Gigi" size="35.0" />
+         </font>
+      </Label>
+      <Button layoutX="209.0" layoutY="441.0" mnemonicParsing="false" onAction="#reset" text="Click to restart!">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="42.0" layoutY="117.0" mnemonicParsing="false" onAction="#pizza" prefHeight="29.0" prefWidth="66.0" text="Pizza" textFill="#ff0b0b">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font></Button>
+      <Button layoutX="294.0" layoutY="178.0" mnemonicParsing="false" onAction="#total" prefHeight="23.0" prefWidth="81.0" text="Total">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="totalLabel" layoutX="384.0" layoutY="179.0" prefHeight="26.0" prefWidth="81.0">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="75.0" prefHeight="37.0" prefWidth="66.0" text="Menu">
+         <font>
+            <Font name="Blackadder ITC" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="101.0" text="SubTotal:">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="324.0" text="\$100: ">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="289.0" text="Change:">
+         <font>
+            <Font name="Book Antiqua Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="324.0" text="\$20: ">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="324.0" text="\$10:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="324.0" text="\$5:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="324.0" text="\$1:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="384.0" text="\$0.25: ">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="384.0" text="\$0.10:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="384.0" text="\$0.05: ">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="384.0" text="\$0.01:">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="overallChangeLabel" layoutX="118.0" layoutY="291.0" prefHeight="22.0" prefWidth="132.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hunderedLabel" layoutX="84.0" layoutY="326.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="twentyLabel" layoutX="171.0" layoutY="326.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="tenLabel" layoutX="269.0" layoutY="326.0" prefHeight="17.0" prefWidth="32.0" />
+      <Label fx:id="fiveLabel" layoutX="361.0" layoutY="326.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="oneLabel" layoutX="459.0" layoutY="326.0" prefHeight="17.0" prefWidth="40.0" />
+      <Label fx:id="quarterLabel" layoutX="84.0" layoutY="386.0" prefHeight="17.0" prefWidth="32.0" />
+      <Label fx:id="dimeLabel" layoutX="199.0" layoutY="386.0" prefHeight="17.0" prefWidth="40.0" />
+      <Label fx:id="nickelLabel" layoutX="331.0" layoutY="386.0" prefHeight="17.0" prefWidth="40.0" />
+      <Label fx:id="pennyLabel" layoutX="459.0" layoutY="386.0" prefHeight="17.0" prefWidth="40.0" />
+    </children>
+</AnchorPane>
